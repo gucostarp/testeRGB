@@ -73,10 +73,52 @@ body {
 }
 
 .footer {
+    border-top: solid 1px gray;
     display: flex;
-    justify-content: center;
-    min-height: 200px;
-    background-color: coral;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.footer img{
+    width: 140px;
+}
+.empresa-group{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.empresa{
+    font-size: 20px;
+}
+.empresa-content{
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.social-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.social-icons{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 5px;
+    
+}
+.social-icons img{
+    width: 23.4px;
+    display: flex
+}
+.social-icons span{
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 .card {
