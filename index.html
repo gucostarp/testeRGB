@@ -8,21 +8,20 @@
     <title>RGB fast</title>
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <link rel="stylesheet" href="assets\styles\style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-
-
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="main">
         <header class="header">
             <div class="logo"><img src="assets\img\logo.png" alt=""></div>
-            <nav class="menu">
+            <nav class="menu" id="menu">
+                <div class="phone-container">
+                    <div class="phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>00</span> 0000-0000
+                    </div>
+                </div>
                 <ul>
                     <li>Página 1</li>
                     <li>Página 2</li>
@@ -33,45 +32,33 @@
                     <li>Página 7</li>
                 </ul>
             </nav>
-            <button class="menu-toggle">
-                O
+            <button class="menu-toggle" id="menuButton">
+                <i class="fas fa-bars"></i>
             </button>
+            <div class="vetical-menu" style="display: none;" id="verticalMenu">
+                <ul>
+                    <li>Página 1</li>
+                    <li>Página 2</li>
+                    <li>Página 3</li>
+                    <li>Página 4</li>
+                    <li>Página 5</li>
+                    <li>Página 6</li>
+                    <li>Página 7</li>
+                </ul>
+            </div>
         </header>
-
-
-        <div class="content" id="content">
-
-            <!-- <div class="card">
-                <img src="assets/img/img1.png">
-                <span>Nome do Álbum Lorem Ipsum Dolor</span>
-                <hr>
-                <div class="social-media">
-                    <button class="tweet">Tweetar</button>
-                    <div class="box">
-                        59
-                    </div>
-                    <div class="box">
-                        59
-                    </div>
-                    <button class="like"><i class="far fa-thumbs-up"></i>Curtir</button>
-                </div>
-            </div> -->
-        </div>
+        <div class="content" id="content"></div>
         <footer class="footer">
-            <div class="logo"><img src="assets\img\footer.png" alt=""></div>
+            <img src="assets\img\footer.png">
             <div class="empresa-group">
                 <div class="empresa">
                     Pessoa ou Empresa
                 </div>
                 <div class="empresa-content">
-                    Lorem ipsum dolor sit amet, lorem consectetur elit. Aliquam id mi ipsum sed ligula sollicitudin
-                    fermentum dolor.<br><br>
-                    Aliquam suscipit, massa quis posuere consecttur, enim libero tempor enim, ultriies est turpis nec
-                    risus.
-                    Nam in libero nulla, eu adipiscing nibh. In vitae massa vitae suscipit scelerisque lorem psum amed.
+                    Lorem ipsum dolor sit amet, lorem consectetur elit. Aliquam id mi ipsum sed ligula sollicitudin fermentum dolor.<br><br> Aliquam suscipit, massa quis posuere consecttur, enim libero tempor enim, ultriies est turpis nec risus. Nam in
+                    libero nulla, eu adipiscing nibh. In vitae massa vitae suscipit scelerisque lorem psum amed.
                 </div>
             </div>
-
             <div class="social-footer">
                 <div class="social-icons">
                     Acesse Também
@@ -89,13 +76,30 @@
                     <span>www.flickr.com/loremipsum</span>
                 </div>
             </div>
-
         </footer>
+        <div class="rights">
+            <img src="assets/img/icons/line.png" class="bar">
+            <div class="rights-content">
+                <div>
+                    <span>Todos os direitos reservados - ©2012</span>
+                </div>
+                <div>
+                    <span>Linha Fast | </span>
+                    <img src="assets/img/icons/logop.png">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
-    <script src="assets/scripts/scripts.js"></script>
-</body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
 
+        <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+        <script src="assets/scripts/scripts.js"></script>
+</body>
 
 </html>
